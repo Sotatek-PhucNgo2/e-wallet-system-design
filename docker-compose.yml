@@ -1,0 +1,16 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgres-wallet
+    environment:
+      - POSTGRES_PASSWORD=123qwe
+      - POSTGRES_USER=wallet_us
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

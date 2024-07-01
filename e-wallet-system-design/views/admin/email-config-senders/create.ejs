@@ -1,0 +1,105 @@
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Email config</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="/#">Home</a></li>
+                    <li class="breadcrumb-item active">Create</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6 form-group row">
+                                <label for="sl_provider" class="col-sm-2 col-form-label">Title</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control" id="sl_provider">
+                                        <option value="GMAIL">Gmail</option>
+                                        <option value="OUTLOOK">Outlook</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-6 row ">
+                                <label class="col-sm-2 col-form-label">Gender :</label>
+                                <div class="col-sm-10">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio"
+                                               id="customRadioInline1"
+                                               name="is_block"
+                                               class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">Male</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio"
+                                               id="customRadioInline2"
+                                               name="is_block"
+                                               class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="email-host" class="col-sm-2 col-form-label">Host</label>
+                                <input class="form-control" type="text"
+                                       value="smtp.gmail.com" id="email-host">
+
+                            </div>
+                            <div class="col-3">
+                                <label for="email-port" class="col-sm-2 col-form-label">Port</label>
+                                <input class="form-control" type="number"
+                                       value="587" id="email-port">
+                            </div>
+                            <div class="col-3">
+                                <label for="email-limit" class="col-sm-2 col-form-label">Limit</label>
+                                <input class="form-control" type="number"
+                                       value="200" id="email-limit">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="email-user" class="col-sm-2 col-form-label">User</label>
+                                <input class="form-control" type="text"
+                                       value="xxx@gmail.com" id="email-user">
+
+                            </div>
+                            <div class="col-6">
+                                <label for="email-password" class="col-sm-2 col-form-label">Password</label>
+                                <input class="form-control" type="password"
+                                       value="" id="email-password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-t-20 m-b-20 text-center">
+                        <button class="btn btn-success" onclick="saveData()">Save</button>
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+        </div>
+    </div>
+</section>
+<script src="/assets/js/live/email-config-senders/action.js"></script>
+
+<script>
+    $("#template-key").val(+(new Date()));
+</script>
